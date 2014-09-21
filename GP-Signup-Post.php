@@ -52,7 +52,8 @@ License: GPLv2
     add_action( 'wp_enqueue_scripts', 'gp_signup_posts_scripts' );
     
     function gp_signup_posts_scripts() {
-    	wp_enqueue_style( 'signup_post_style', plugins_url( 'signup_post_style.css', __FILE__ ) );
+        wp_enqueue_style( 'signup_post_style', plugins_url( 'signup_post_style.css', __FILE__ ) );
+        wp_enqueue_script( 'signup_post_script', plugins_url( 'signup_post_script.js', __FILE__ ) );
     }
 
     
