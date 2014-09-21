@@ -1,9 +1,10 @@
 .top-scroll-nav {
 	list-style-type: none;
-	margin-left: -40px;
+	margin-left: 0;
 }
 
 .top-scroll-nav li {
 	display: inline;
 	margin-right: 20px;
+	font-size: 1.5em;
 }

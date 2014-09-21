@@ -33,7 +33,7 @@ License: GPLv2
                 'public' => true,
                 'menu_position' => 15,
                 'supports' => array( 'title', 'editor', 'thumbnail'),
-				'rewrite'  => array( 'slug' => 'signups' ),
+                'rewrite'  => array( 'slug' => 'signups' ),
                 'has_archive' => true
             )
         );
