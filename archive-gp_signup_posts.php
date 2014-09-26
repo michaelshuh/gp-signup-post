@@ -31,7 +31,18 @@ get_header(); ?>
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="<?php global $post; echo $post->post_name; ?>" href="#details-0-<?php echo $count; ?>">
-										<img src="<?php echo esc_html( get_post_meta( get_the_ID(), 'gp_signup_post_image', true ) ); ?>" width="100%" height="350" class="alignnone size-full" />
+									    <?php
+									        $image_url = esc_html( get_post_meta( get_the_ID(), 'gp_signup_post_image', true ));
+									        if ($image_url == '') {
+									    ?>
+									        <h4><?php the_title(); ?></h4>
+									    <?php       
+									        } else {
+									    ?>
+										    <img src="<?php echo esc_html( get_post_meta( get_the_ID(), 'gp_signup_post_image', true ) ); ?>" width="100%" height="350" class="alignnone size-full" />
+										<?php
+									        }
+										?>
 									</a>
 								</h4>
 							</div>
